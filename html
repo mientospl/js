@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="app.js" defer></script>
+<body>
+    <form>
+        <label for="liczba1">Liczba 1:</label>
+        <input type="number" id="liczba1" required>
+        <br>
+        <label for="liczba2">Liczba 2:</label>
+        <input type="number" id="liczba2" required>
+        <br>
+        <label for="operacja">Operacja:</label>
+        <select id="operacja">
+            <option value="dodawanie">Dodawanie</option>
+            <option value="odejmowanie">Odejmowanie</option>
+            <option value="mnozenie">Mnożenie</option>
+            <option value="dzielenie">Dzielenie</option>
+        </select>
+        <br>
+        <button type="button" onclick="oblicz()">Oblicz</button>
+    </form>
+    <p id="wynik"></p>
 
+    <label for="liczba">Liczba:</label>
+    <input type="text" id="liczba">
+    <button type="button" onclick="obliczSumeCyfr()">Oblicz</button>
+    <p id="wynik"></p>
+
+    <label for="imie">Imię:</label>
+    <input type="text" id="imie" required>
+    <br>
+    <label for="nazwisko">Nazwisko:</label>
+    <input type="text" id="nazwisko" required>
+    <br>
+    <button type="button" onclick="wyswietlImieNazwisko()">Wyświetl</button>
+</form>
+<p id="wynik"></p>
+
+<form>
+    <label for="tekst">Tekst:</label>
+    <input type="text" id="tekst" required>
+    <br>
+    <button type="button" onclick="odwrocTekst()">Odwróć</button>
+</form>
+<p id="wynik"></p>
+
+<button type="button" onclick="generujHaslo()">Generuj</button>
+<p id="wynik"></p>
+
+<form>
+    <label for="nowyFilm">Dodaj film:</label>
+    <input type="text" id="nowyFilm">
+    <button type="button" onclick="dodajFilm()">Dodaj</button>
+</form>
+<ul id="listaFilmow"></ul>
+
+<div style="position: relative; left: 0;">
+    <img id="obrazek" src="sciezka/do/obrazka.jpg" alt="Obrazek">
+</div>
+<button onclick="przesunObrazek(-1)">Lewo</button>
+<button onclick="przesunObrazek(1)">Prawo</button>
+
+<p>Wylosowałem liczbę z zakresu od 1 do 100. Spróbuj ją odgadnąć!</p>
+<input type="number" id="liczba">
+<button onclick="sprawdzLiczbe()">Sprawdź</button>
+<p id="wynik"></p>
+
+<label for="kwota">Kwota:</label>
+<input type="number" id="kwota" step="0.01"><br><br>
+
+<label for="kurs">Kurs wymiany:</label>
+<input type="number" id="kurs" step="0.01"><br><br>
+
+<button onclick="przeliczWalute()">Przelicz</button><br><br>
+
+<p id="wynik"></p>
+
+<button onclick="wyswietlLosowaLiczba()">Generuj losową liczbę</button>
+<p id="wynik"></p>
+</body>
+</html>
